@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto Fenix</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background-image: url("img/logo.jpg");
+    }
+
+    h1 {
+      font-family: 'Courier New', Courier, monospace;
+      padding: 1em;
+    }
+
+    label {
+
+      padding: 1em;
+      font-weight: bold;
+      font-size: large;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    .button {
+      width: 100%;
+      padding: 1em;
+      margin-top: 50px;
+
+    }
+
+    .formulario {
+      height: 560px;
+      padding: 100px;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(56, 98, 187, 0.5);
+      width: 60%;
+      margin-left: 20%;
+    }
+
+    .componente {
+      padding: 1em;
+      width: 100%;
+    }
+  </style>
+  <script>
+    function resultado() {
+      alert("La solicitud fue ingresada correctamente");
+    }
+  </script>
+</head>
+
+<body>
+  <div class="nav">
+    <ul>
+      <li><img src="img/fenixlogo.jpg" alt="" style="height: 50px;"></li>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="comocomprar.html">COMO COMPRAR</a></li>
+      <li><a href="marcas.html">MARCAS</a></li>
+      <li><a href="pagos.html">PAGOS</a></li>
+      <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+  </div>
+  <div class="formulario">
+    <form action="#" method="post">
+      <h1>Formulario de contacto Fenix</h1>
+      <div class="componente">
+        <label>Nombre</label>
+        <input type="text" placeholder="Ingrese su nombre">
+
+        <label> Email </label>
+        <input type="email" placeholder="ejemplo@dominio.com">
+      </div>
+
+      <div class="componente">
+
+
+        <label>Modelo de vehiculo</label>
+        <select>
+          <option>Seleccione modelo</option>
+          <option>codigo 001</option>
+          <option>codigo 002</option>
+          <option>codigo 003</option>
+          <option>codigo 004</option>
+          <option>codigo 005</option>
+          <option>codigo 006</option>
+          <option>codigo 007</option>
+          <option>codigo 008</option>
+          <option>codigo 009</option>
+          <option>codigo 010</option>
+        </select>
+      </div>
+      <div class="componente">
+        <label>Haganos su consulta</label>
+        <textarea name="" id="" cols="35" rows="5"></textarea>
+
+      </div>
+      <div class="componente button">
+        <input type="button" name="entrar" id="entrar" value="Enviar" onclick="resultado()">
+      </div>
+
+
+
+
+    </form>
+  </div>
+  <div class="footer">
+    <p> &copy; 2020 -
+      Desarrollado por <strong>Grupo3</strong> Inc.</p>
+  </div>
+</body>
+
+</html>

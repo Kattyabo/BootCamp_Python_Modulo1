@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automotora FENIX</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+
+
+    .header {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 100px;
+      background-image: url("../img/logo.jpg");
+      background-attachment: fixed;
+    }
+
+    .header h1 {
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .header p {
+      background-color: rgba(134, 134, 134, 0.5);
+      padding: 1em;
+    }
+
+    .img img {
+      width: 100%;
+    }
+
+    .footer {
+      text-align: center;
+      background-color: black;
+      color: whitesmoke;
+      height: 80px;
+      padding: 35px;
+    }
+
+
+
+    [class*="col-"] {
+      width: 100%;
+      padding: 3px;
+
+    }
+
+    /* Versión ordenador*/
+    @media only screen and (min-width: 768px) {
+      .nav li {
+        display: inline;
+        font-size: 1.5em;
+        height: 80px;
+      }
+
+      .header {
+        height: 500px;
+      }
+
+      .header p {
+        justify-content: center;
+        align-items: center;
+        float: right;
+        width: 65%;
+        font-size: 1.5em;
+        margin-right: 1em;
+      }
+
+      .header h1 {
+        justify-content: center;
+        align-items: center;
+        float: right;
+        padding-right: 1em;
+        font-size: 5em;
+      }
+
+      .margen {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      .col-1 {
+        width: 8.33%;
+      }
+
+      .col-2 {
+        width: 16.66%;
+      }
+
+      .col-3 {
+        width: 25%;
+      }
+
+      .col-4 {
+        width: 33.33%;
+      }
+
+      .col-5 {
+        width: 41.66%;
+      }
+
+      .col-6 {
+        width: 50%;
+      }
+
+      .col-7 {
+        width: 58.33%;
+      }
+
+      .col-8 {
+        width: 66.66%;
+      }
+
+      .col-9 {
+        width: 75%;
+      }
+
+      .col-10 {
+        width: 83.33%;
+      }
+
+      .col-11 {
+        width: 91.66%;
+      }
+
+      .col-12 {
+        width: 100%;
+      }
+
+      [class*="col-"] {
+        float: left;
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 nav">
+        <ul>
+          <li> <img src="../img/fenixlogo.jpg" alt=""></li>
+          <li style="font-size: 1em;">El mejor servicio</li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="comocomprar.html">COMO COMPRAR</a></li>
+          <li><a href="marcas.html">MARCAS</a></li>
+          <li><a href="pagos.html">PAGOS</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 header">
+        <h1>Automotora FENIX</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore necessitatibus aliquam in fugiat impedit
+          alias? Distinctio, nam labore, explicabo unde voluptates reiciendis facere quis aspernatur libero iusto ullam.
+          Saepe, voluptate!</p>
+      </div>
+    </div>
+    <div class="row margen">
+      <div class="col-3 img"><a href="auto1.html"><img src="../img/auto1.jpg" alt=""></a>
+        <h3>Nombre Automovil</h3>
+        <p><span>Descripcion: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque aliquid ea
+          maiores, dolorem consectetur vero ullam, natus cupiditate veniam, commodi officiis fugit repudiandae aut!</p>
+        <p><span>Cod.</span>001</p>
+        <p>Precio: <span>$20.000.000.-</span></p>
+      </div>
+      <div class="col-3 img"><a href="auto2.html"><img src="../img/auto1.jpg" alt=""></a>
+        <h3>Nombre Automovil</h3>
+        <p><span>Descripcion: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque aliquid ea
+          maiores, dolorem consectetur vero ullam, natus cupiditate veniam, commodi officiis fugit repudiandae aut!</p>
+        <p><span>Cod.</span>001</p>
+        <p>Precio: <span>$20.000.000.-</span></p>
+      </div>
+      <div class="col-3 img"><a href="auto3.html"><img src="../img/auto1.jpg" alt=""></a>
+        <h3>Nombre Automovil</h3>
+        <p><span>Descripcion: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque aliquid ea
+          maiores, dolorem consectetur vero ullam, natus cupiditate veniam, commodi officiis fugit repudiandae aut!</p>
+        <p><span>Cod.</span>001</p>
+        <p>Precio: <span>$20.000.000.-</span></p>
+      </div>
+      <div class="col-3 img"><a href="auto4.html"><img src="../img/auto1.jpg" alt=""></a>
+        <h3>Nombre Automovil</h3>
+        <p><span>Descripcion: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque aliquid ea
+          maiores, dolorem consectetur vero ullam, natus cupiditate veniam, commodi officiis fugit repudiandae aut!</p>
+        <p><span>Cod.</span>001</p>
+        <p>Precio: <span>$20.000.000.-</span></p>
+      </div>
+      <div class="col-3 img"><a href="auto5.html"><img src="../img/auto1.jpg" alt=""></a>
+        <h3>Nombre Automovil</h3>
+        <p><span>Descripcion: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque aliquid ea
+          maiores, dolorem consectetur vero ullam, natus cupiditate veniam, commodi officiis fugit repudiandae aut!</p>
+        <p><span>Cod.</span>001</p>
+        <p>Precio: <span>$20.000.000.-</span></p>
+      </div>
+      <div class="col-3 img"><a href="auto6.html"><img src="../img/auto1.jpg" alt=""></a>
+        <h3>Nombre Automovil</h3>
+        <p><span>Descripcion: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque aliquid ea
+          maiores, dolorem consectetur vero ullam, natus cupiditate veniam, commodi officiis fugit repudiandae aut!</p>
+        <p><span>Cod.</span>001</p>
+        <p>Precio: <span>$20.000.000.-</span></p>
+      </div>
+      <div class="col-3 img"><a href="auto7.html"><img src="../img/auto1.jpg" alt=""></a>
+        <h3>Nombre Automovil</h3>
+        <p><span>Descripcion: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque aliquid ea
+          maiores, dolorem consectetur vero ullam, natus cupiditate veniam, commodi officiis fugit repudiandae aut!</p>
+        <p><span>Cod.</span>001</p>
+        <p>Precio: <span>$20.000.000.-</span></p>
+      </div>
+      <div class="col-3 img"><a href="auto8.html"><img src="../img/auto1.jpg" alt=""></a>
+        <h3>Nombre Automovil</h3>
+        <p><span>Descripcion: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque aliquid ea
+          maiores, dolorem consectetur vero ullam, natus cupiditate veniam, commodi officiis fugit repudiandae aut!</p>
+        <p><span>Cod.</span>001</p>
+        <p>Precio: <span>$20.000.000.-</span></p>
+      </div>
+      <div class="col-3 img"><a href="auto9.html"><img src="../img/auto1.jpg" alt=""></a>
+        <h3>Nombre Automovil</h3>
+        <p><span>Descripcion: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque aliquid ea
+          maiores, dolorem consectetur vero ullam, natus cupiditate veniam, commodi officiis fugit repudiandae aut!</p>
+        <p><span>Cod.</span>001</p>
+        <p>Precio: <span>$20.000.000.-</span></p>
+      </div>
+      <div class="col-3 img"><a href="auto10.html"><img src="../img/auto1.jpg" alt=""></a>
+        <h3>Nombre Automovil</h3>
+        <p><span>Descripcion: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque aliquid ea
+          maiores, dolorem consectetur vero ullam, natus cupiditate veniam, commodi officiis fugit repudiandae aut!</p>
+        <p><span>Cod.</span>001</p>
+        <p>Precio: <span>$20.000.000.-</span></p>
+      </div>
+    </div>
+    <div class="footer">
+      <p> &copy; 2020 -
+        Desarrollado por <strong>Grupo3</strong> Inc.</p>
+    </div>
+  </div>
+</body>
+
+</html>

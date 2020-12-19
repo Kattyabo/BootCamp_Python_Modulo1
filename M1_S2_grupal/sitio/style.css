@@ -1,0 +1,127 @@
+ * {
+   box-sizing: border-box;
+   margin: 0;
+ }
+ .container{
+   background-image: linear-gradient(rgba(255, 255, 255, 0.7),
+     rgba(255, 255, 255, 0.5)),
+   url("../img/logo.jpg");
+ }
+ .nav {
+   background-color: whitesmoke;
+   height: 100%;
+ }
+
+ .nav li {
+   list-style: none;
+   margin: 0%;
+   width: 100%;
+   font-family: 'Courier New', Courier, monospace;
+   
+ }
+
+ .nav a {
+   text-decoration: none;
+   padding: 1em;
+ }
+
+ .nav img {
+   width: 10%;
+ }
+ .nav li a:hover {
+   color: aqua;
+ }
+.centrado-interno{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+ .footer {
+   text-align: center;
+   background-color: black;
+   color: whitesmoke;
+   height: 80px;
+   padding: 35px;
+ }
+
+ /* Para versión móvil (Mobile First): */
+ [class*="col-"] {
+   width: 100%;
+   padding: 3px;
+   
+ }
+
+ /* Para versión escritorio o laptop: */
+ @media only screen and (min-width: 768px) {
+   .nav{
+     height: 100px;
+   }
+   .nav li {
+     display: inline;
+     font-size: 1.5em;
+     height: 80px;
+   }
+   .nav li a:hover{
+
+    color: black;
+     background-color: aqua;
+   }
+   .col-1 {
+     width: 8.33%;
+   }
+
+   .col-2 {
+     width: 16.66%;
+   }
+
+   .col-3 {
+     width: 25%;
+   }
+
+   .col-4 {
+     width: 33.33%;
+   }
+
+   .col-5 {
+     width: 41.66%;
+   }
+
+   .col-6 {
+     width: 50%;
+   }
+
+   .col-7 {
+     width: 58.33%;
+   }
+
+   .col-8 {
+     width: 66.66%;
+   }
+
+   .col-9 {
+     width: 75%;
+   }
+
+   .col-10 {
+     width: 83.33%;
+   }
+
+   .col-11 {
+     width: 91.66%;
+   }
+
+   .col-12 {
+     width: 100%;
+   }
+
+   [class*="col-"] {
+     float: left;
+   }
+
+   .row::after {
+     content: "";
+     clear: both;
+     display: table;
+   }
+ }

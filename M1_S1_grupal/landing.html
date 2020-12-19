@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <meta charset="utf-8" />
+  <style>
+    * {
+      margin: 0%;
+      font-family: "Roboto", sans-serif;
+    }
+
+    body {
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.7),
+          rgba(255, 255, 255, 0.7)), url("img/logo.jpg");
+    }
+
+    body p {
+      width: 80%;
+    }
+
+    #imagen {
+      float: left;
+      width: 40%;
+      text-align: center;
+      padding-left: 8em;
+    }
+
+    .imagen {
+      width: 90%;
+    }
+
+    #formulario-beneficios {
+      float: right;
+      width: 50%;
+
+    }
+
+    .formulario {
+      width: 70%;
+      padding: 2em;
+    }
+
+    form {
+      float: right;
+    }
+
+    .table {
+      float: left;
+      width: auto;
+      text-align: justify;
+      padding-left: 5%;
+      font-size: 0.8em;
+      justify-content: space-between;
+
+    }
+
+    h3 {
+      padding: 1em;
+    }
+
+    header,
+    footer {
+      background-color: rgba(0, 100, 255, 0.5);
+      padding: 1em;
+      width: 100%;
+      color: white;
+      text-decoration: solid;
+    }
+
+    header {
+      clear: both;
+      text-align: center;
+    }
+
+    footer {
+      bottom: 0;
+      position: absolute;
+      background-color: black;
+    }
+
+    footer a {
+      color: antiquewhite;
+    }
+
+    .testimonio {
+      width: 30%;
+      padding: 5px;
+      text-align: center;
+    }
+
+    .direccion {
+      float: right;
+      width: 50%;
+    }
+
+    .footer {
+      float: left;
+      width: 50%;
+    }
+
+    .mapa {
+      width: 70px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Fenix Automotora</h1>
+    <h2>Regístrate en nuestro boletin y obten un 5% de descuento en credito directo</h2>
+  </header>
+  <section id="imagen">
+    <a href="sitio/index.html"><img src="img/fenixlogo.jpg" alt="" height="150px"></a>
+
+    <p class="imagen">Somos una automotora con mas de 20 años de funcionamiento en la región Metropolitana. Ofrecemos
+      servicio de
+      compra,
+      venta, arriendo de vehículos y financiamiento Santander.</p>
+  </section>
+  <section id="formulario-beneficios">
+    <div class="formulario">
+      <form>
+        <p>Nombre</p>
+        <input type="text">
+        <p>Email</p>
+        <input type="email" />
+        <br>
+        <button type="submit">Contactanos!</button>
+      </form>
+      <br>
+      <h3>¡Nuestros Beneficios!</h3>
+      <br>
+      <ul>
+        <li>Créditos flexibles a su bolsillo.</li>
+        <li>Diversos tipos de vehículos para sus múltiples necesidades.</li>
+        <li>Atención integral</li>
+        <li>Descarga nuestro folleto <a href="folleto.pdf"> AQUI</a></li>
+      </ul>
+      <br>
+    </div>
+  </section>
+  <section>
+    <div class="table">
+      <h3>Algunos de nuestros testimonios</h3>
+      <div class="testimonio" style="float: left;">
+        <p><strong>Angelica Valdez</strong></p>
+        <p>28 años</p>
+        <p>Compré un Versa advance Blanco, estoy muy satisfecha, me encanta el trato y lo emotivo de su entrega y que me
+          han dado seguimiento después de mi compra. Felicidades, sigan así!!!!</p>
+      </div>
+      <div class="testimonio" style="display: inline-block;">
+        <p><strong>Raúl Salas</strong></p>
+        <p>45 años</p>
+        <p>Hola, tengo diez años comprando mis vehículos en Fenix Automotora, siempre me voy contento con la atención de
+          mi asesora, hay muy buenas promociones y excelente trato, todos son muy amables y cálidos. Gracias por ser mis
+          amigos!</p>
+      </div>
+      <div class="testimonio" style="float: right;">
+        <p><strong>Carolina Cardona</strong></p>
+        <p>28 años</p>
+        <p>Tengo 6 meses que compré dos autos en Soni, primero un Versa y después una Xtrail, la verdad es que su
+          atención es extraordinaria, me ayudaron a obtener mi primer crédito y siempre me apapachan en las entregas de
+          mi auto y en el trato en general, los invito a conocer la agencia.</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <p>
+        <a href="http://www.audi.cl ">Audi</a> |
+        <a href="http://dodge.cl">Dodge</a> |
+        <a href="http://www.mazda.cl">Suzuki</a> |
+        <a href="http://www.la.mercedes-benz.com">Chevrolet</a>
+      </p>
+      <br>
+      <p> &copy; 2020 -
+        Desarrollado por <strong>Grupo3</strong> Inc.</p>
+    </div>
+    <div class="direccion">
+      <a href="img/mapa.jpg" style="float: left; padding-right: 10px;"><img class="mapa" src="img/mapa.jpg" alt=""></a>
+      <p>
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">Twitter</a>
+      </p>
+      <p>Escribenos a <a href="sitio/contacto.html">info@fenix.cl</a> o visitanos en Av. no existe 123, Santiago </p>
+    </div>
+  </footer>
+</body>
+
+</html>

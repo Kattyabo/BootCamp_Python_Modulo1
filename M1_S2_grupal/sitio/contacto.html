@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contacto</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .resaltar a {
+      background-color: aqua;
+    }
+
+    .resaltar {
+      padding: 1em;
+    }
+
+    .fondo-azul {
+      background-color: rgba(34, 73, 180, 0.5);
+    }
+
+    .boton {
+      height: 2em;
+      color: aqua;
+      background-color: black;
+      width: 80%;
+    }
+
+
+
+    @media only screen and (min-width: 768px) {
+
+      h1 {
+        font-size: 4em;
+        padding: 0.5em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1.2em;
+        padding: 0.8em;
+      }
+
+      .padding {
+        padding: 1em;
+
+      }
+
+    }
+  </style>
+  <script>
+    function resultado() {
+      alert("La solicitud fue ingresada correctamente, pronto nos contactaremos con usted!");
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 nav">
+        <ul>
+          <li> <img src="../img/fenixlogo.jpg" alt=""></li>
+          <li style="font-size: 1em;">El mejor servicio</li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="comocomprar.html">COMO COMPRAR</a></li>
+          <li><a href="marcas.html">MARCAS</a></li>
+          <li><a href="pagos.html">PAGOS</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-12 centrado-interno">
+          <div class="col-6">
+            <h1>Formulario de contacto Automotora FENIX</h1>
+          </div>
+          <div class="col-6 fondo-azul padding">
+            <form action="" class="row">
+              <div class="col-6">
+                <label for="">
+                  <p>Nombre</p>
+                </label>
+                <input type="text" placeholder="Ingrese su nombre completo">
+              </div>
+              <div class="col-6">
+                <label for="">
+                  <p>Correo Eelectronico</p>
+                </label>
+                <input type="email" name="" id="" placeholder="Ingrese un E-mail valido">
+                <label for="">
+                  <p style="font-size: 0.5em;">ejemplo@correo.com</p>
+                </label>
+              </div>
+              <div class="col-6">
+                <label for="">
+                  <p>seleccione modelo</p>
+                </label>
+                <select>
+                  <option>Seleccione un codigo</option>
+                  <option>codigo 001</option>
+                  <option>codigo 002</option>
+                  <option>codigo 003</option>
+                  <option>codigo 004</option>
+                  <option>codigo 005</option>
+                  <option>codigo 006</option>
+                  <option>codigo 007</option>
+                  <option>codigo 008</option>
+                  <option>codigo 009</option>
+                  <option>codigo 010</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <label>
+                  <p>Ingrese su consulta</p>
+                </label>
+                <textarea name="" id="" cols="30" rows="6"></textarea>
+              </div>
+
+              <div class="col-12 padding">
+                <input class="boton" type="button" name="entrar" id="entrar" value="Enviar" onclick="resultado()">
+              </div>
+            </form>
+          </div>
+          <div class="col-12 resaltar">
+            <p><strong>Si tiene alguna otra duda tambien puede <a href="contacto.html">contactarnos</a></strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="footer">
+          <p> &copy; 2020 -
+            Desarrollado por <strong>Grupo3</strong> Inc.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
