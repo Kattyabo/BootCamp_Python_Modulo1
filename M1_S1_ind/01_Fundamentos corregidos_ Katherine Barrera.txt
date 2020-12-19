@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio HTML</title>
+  <!--Este es un comentario-->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background: beige;
+    }
+  </style>
+</head>
+<body>
+  <h1>Depuracion HTML</h1>
+  <h2>Subtítulo</h2>
+  <p>Posibles errores en HTML</p>
+  <ul>
+    <li>
+      <p>primer elemento de lista con <strong>este texto en negrita</strong></p>
+    </li>
+    <li>
+      <p>segundo elemento de lista <strong>con este texto en negrita</strong> y texto de parrafo</p>
+    </li>
+    <li>
+      <p>tercer elemento de lista con <a href="https://www.adalid.cl/awakelab">enlace</a></p>
+    </li>
+  </ul>
+</body>
+</html>

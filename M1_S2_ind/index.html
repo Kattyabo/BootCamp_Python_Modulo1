@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+     
+    * {
+     box-sizing: border-box;
+     background-color: aqua;
+     font-family: monospace;
+     }
+     
+     /* Para versión móvil (Mobile First): */
+     [class*="col-"] {
+     width: 100%;
+     padding: 3px;
+     text-align: center;
+     }
+     
+     img {
+        width: 100%;
+        padding: 50px;    
+     }
+     
+     div > p {
+         border: 1px solid grey;
+         content: center;
+         padding: 2px;
+         border-radius: 15%;
+         align-items: center;
+     }
+     
+  #desn {
+         border: 0px;
+         font-weight: bolder;
+     }
+     
+     /* Para versión escritorio o laptop: */
+     @media only screen and (min-width: 1280px){
+     .col-1 {width: 8.33%;}
+     .col-2 {width: 16.66%;}
+     .col-3 {width: 25%;}
+     .col-4 {width: 33.33%;}
+     .col-5 {width: 41.66%;}
+     .col-6 {width: 50%;}
+     .col-7 {width: 58.33%;}
+     .col-8 {width: 66.66%;}
+     .col-9 {width: 75%;}
+     .col-10 {width: 83.33%;}
+     .col-11 {width: 91.66%;}
+     .col-12 {width: 100%;}
+     [class*="col-"] {
+     float: left;
+     }
+     .row::after {
+     content: "";
+     clear: both;
+     display: table;
+     width: 100%;
+     }          
+    }
+ </style>
+ </head>
+ <header style="text-align: center">
+    <div class="row">
+ <div class="col-12"><h1>ADOPTA UN GATITO</h1></div>
+ <div class="col-12"><h3>No compres, ellos te entregan sólo amor</h3></div>
+ <div class="col-12"><p id="desn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias accusantium minus corporis inventore officia maxime repellat dolorum commodi voluptatum quod! Excepturi molestiae fuga dolore ipsa impedit quidem voluptatem eveniet sit ex iusto perferendis earum repellendus porro unde quisquam tenetur, similique officia vero quod cum sint</p></div>
+ </div> 
+</header>
+ <body>
+ <div class="row">
+     <div class="col-4"><img src="gato1.jpg">
+         <div class="col-4"><p>Texto1 a para prueba</p></div>
+         <div class="col-4"><p>Texto2 a para prueba</p></div>
+         <div class="col-4"><p>Texto3 a para prueba</p></div>
+         <div class="col-4"><p>Texto4 a para prueba</p></div>
+         <div class="col-4"><p>Texto5 a para prueba</p></div>
+         <div class="col-4"><p>Texto6 a para prueba</p></div>
+     </div>
+      <div class="col-4"><img src="gato2.jpg">
+         <div class="col-4"><p>Texto1 a para prueba</p></div>
+         <div class="col-4"><p>Texto2 a para prueba</p></div>
+         <div class="col-4"><p>Texto3 a para prueba</p></div>
+         <div class="col-4"><p>Texto4 a para prueba</p></div>
+         <div class="col-4"><p>Texto5 a para prueba</p></div>
+         <div class="col-4"><p>Texto6 a para prueba</p></div>
+     </div>
+      <div class="col-4"><img src="gato3.jpg">
+         <div class="col-4"><p>Texto1 a para prueba</p></div>
+         <div class="col-4"><p>Texto2 a para prueba</p></div>
+         <div class="col-4"><p>Texto3 a para prueba</p></div>
+         <div class="col-4"><p>Texto4 a para prueba</p></div>
+         <div class="col-4"><p>Texto5 a para prueba</p></div>
+         <div class="col-4"><p>Texto6 a para prueba</p></div>
+     </div>
+ </div>
+ <div class="row">
+     <div class="col-4"><img src="gato4.jpg">
+         <div class="col-4"><p>Texto1 a para prueba</p></div>
+         <div class="col-4"><p>Texto2 a para prueba</p></div>
+         <div class="col-4"><p>Texto3 a para prueba</p></div>
+         <div class="col-4"><p>Texto4 a para prueba</p></div>
+         <div class="col-4"><p>Texto5 a para prueba</p></div>
+         <div class="col-4"><p>Texto6 a para prueba</p></div>
+     </div>
+      <div class="col-4"><img src="gato5.jpg">
+         <div class="col-4"><p>Texto1 a para prueba</p></div>
+         <div class="col-4"><p>Texto2 a para prueba</p></div>
+         <div class="col-4"><p>Texto3 a para prueba</p></div>
+         <div class="col-4"><p>Texto4 a para prueba</p></div>
+         <div class="col-4"><p>Texto5 a para prueba</p></div>
+         <div class="col-4"><p>Texto6 a para prueba</p></div>
+     </div>
+      <div class="col-4"><img src="gato6.jpg">
+         <div class="col-4"><p>Texto1 a para prueba</p></div>
+         <div class="col-4"><p>Texto2 a para prueba</p></div>
+         <div class="col-4"><p>Texto3 a para prueba</p></div>
+         <div class="col-4"><p>Texto4 a para prueba</p></div>
+         <div class="col-4"><p>Texto5 a para prueba</p></div>
+         <div class="col-4"><p>Texto6 a para prueba</p></div>
+     </div>
+ </div>
+ <div class="row">
+ <p id="desn"> Texto posterior a la grilla de columnas</p>
+ </div>
+ </body>
+</html>

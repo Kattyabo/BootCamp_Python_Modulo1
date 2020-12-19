@@ -1,0 +1,139 @@
+~$ mkdir proyecto/
+~$ chmood 775 proyecto/
+bash: chmood: command not found
+~$ chmod 775 proyecto/
+~$ cd proyecto/
+~/proyecto$ mkdir venv/
+~/proyecto$ chmod 775 venv/
+~/proyecto$ cd venv/
+~/proyecto/venv$ mkdir bin/
+~/proyecto/venv$ chmod 775 bin/
+~/proyecto/venv$ mkdir include/
+~/proyecto/venv$ chmod 775 include/
+~/proyecto/venv$ mkdir lib/
+~/proyecto/venv$ chmod 755 lib/
+~/proyecto/venv$ nano pyenv.cfgy
+~/proyecto/venv$ cd ..
+~/proyecto$ mkdir scripts/
+~/proyecto$ chmod 775 scripts/
+~/proyecto$ cd scripts/
+~/proyecto/scripts$ nano calculate.py
+~/proyecto/scripts$ chmod 666 calculate.py 
+~/proyecto/scripts$ nano functions.py
+~/proyecto/scripts$ chmod 600 functions.py 
+~/proyecto/scripts$ nano config.py
+~/proyecto/scripts$ chmod 666 config.py 
+~/proyecto/scripts$ mkdir module/
+~/proyecto/scripts$ cd module/
+~/proyecto/scripts/module$ nano __init.py
+~/proyecto/scripts/module$ chmod 666 __init.py 
+~/proyecto/scripts/module$ nano classes.py
+~/proyecto/scripts/module$ chmod 666 classes.py 
+~/proyecto/scripts/module$ nano parameters.py
+~/proyecto/scripts/module$ chmod 644 parameters.py 
+~/proyecto/scripts/module$ cd ..
+~/proyecto/scripts$ cd ..
+~/proyecto$ mkdir documentos/
+~/proyecto$ chmod 775 documentos/
+~/proyecto$ cd documentos/
+~/proyecto/documentos$ nano manual.md
+~/proyecto/documentos$ chmod 600 manual.md 
+~/proyecto/documentos$ nano documentation.md
+~/proyecto/documentos$ chmod 600 documentation.md 
+~/proyecto/documentos$ cd ..
+~/proyecto$ mkdir tmp/
+~/proyecto$ chmod 777 tmp/
+~/proyecto$ cd tmp/
+~/proyecto/tmp$ ls -s calculate.py ../tmp
+ls: cannot access 'calculate.py': No such file or directory
+../tmp:
+total 0
+~/proyecto/tmp$ ls -s calculate.py ../tmp/calculate.py
+ls: cannot access 'calculate.py': No such file or directory
+ls: cannot access '../tmp/calculate.py': No such file or directory
+~/proyecto/tmp$ cd ..
+~/proyecto$ ls
+documentos  scripts  tmp  venv
+~/proyecto$ cd tmp/
+~/proyecto/tmp$ nano @calculate.py
+~/proyecto/tmp$ nano @functions.py
+~/proyecto/tmp$ calculate.py -> calculate.py
+bash: calculate.py: command not found
+~/proyecto/tmp$ operaciones.py -> functions.py
+bash: operaciones.py: command not found
+~/proyecto/tmp$ cp -r module /home/user/proyecto/tmp
+cp: cannot stat 'module': No such file or directory
+~/proyecto/tmp$ cd ..
+~/proyecto$ cd scripts/
+~/proyecto/scripts$ cp -r module /home/user/proyecto/tmp
+~/proyecto/scripts$ cd ..
+~/proyecto$ cd ..
+~$ tree
+.
+├── 2020-10-22-003453.term
+└── proyecto
+    ├── documentos
+    │   ├── documentation.md
+    │   └── manual.md
+    ├── scripts
+    │   ├── calculate.py
+    │   ├── config.py
+    │   ├── functions.py
+    │   └── module
+    │       ├── __init.py
+    │       ├── classes.py
+    │       └── parameters.py
+    ├── tmp
+    │   ├── @calculate.py
+    │   ├── @functions.py
+    │   ├── calculate.py
+    │   ├── functions.py
+    │   └── module
+    │       ├── __init.py
+    │       ├── classes.py
+    │       └── parameters.py
+    └── venv
+        ├── bin
+        ├── include
+        ├── lib
+        └── pyenv.cfgy
+
+10 directories, 17 files
+~$ cd proyecto/
+~/proyecto$ cd tmp/
+~/proyecto/tmp$ rm @calculate.py 
+~/proyecto/tmp$ rm @functions.py 
+~/proyecto/tmp$ cd ..
+~/proyecto$ cd ..
+~$ tree
+.
+├── 2020-10-22-003453.term
+└── proyecto
+    ├── documentos
+    │   ├── documentation.md
+    │   └── manual.md
+    ├── scripts
+    │   ├── calculate.py
+    │   ├── config.py
+    │   ├── functions.py
+    │   └── module
+    │       ├── __init.py
+    │       ├── classes.py
+    │       └── parameters.py
+    ├── tmp
+    │   ├── calculate.py
+    │   ├── functions.py
+    │   └── module
+    │       ├── __init.py
+    │       ├── classes.py
+    │       └── parameters.py
+    └── venv
+        ├── bin
+        ├── include
+        ├── lib
+        └── pyenv.cfgy
+
+10 directories, 15 files
+~$ exit
+exit
+~$ 
